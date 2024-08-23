@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div class="container border mt-5">
+        <div class="row justify-content-center">
+            <div class="border col-md-3">                                   {/* Will want to fix the spacing here eventually*/}
+                <h1>Hello! My name is Kaylee Eichorn</h1>
+            </div>
+            <div class="border col-md-3 text-end">                           {/* And here too */}
+                <p> Image here </p>
+            </div>
+        </div>
+    </div>
+
+      <div class="container border text-center">
+        <h3> About me </h3>
+        <p> Stuff about me here </p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div class="container border text-center">
+        <h3> Projects </h3>
+
+        <div class="card">
+          <p> Project 1 </p>
+        </div>
+
+        <div class="card">
+          <p> Project 1 </p>
+        </div>
+
+        <div class="card">
+          <p> Project 1 </p>
+        </div>
+
+        <div class="card">
+          <p> Project 1 </p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div class="container border text-center">
+        <h3> Certifications </h3>
+        <ul>
+          <li> Certification 1 </li>
+          <li> Certification 2 </li>
+          <li> Certification 3 </li>
+          <li> Certification 4 </li>
+          <li> Certification 5 </li>
+        </ul>
+      </div>
+
+      <div class="container border text-center">
+        <h3> Contact </h3>
+        <button>Resume</button>
+        <button>Github</button>
+        <button>LinkedIn</button>
+        <button>Other</button>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+

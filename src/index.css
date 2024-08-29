@@ -1,4 +1,8 @@
-/* html {
+html {
   background: rgb(203,195,227);
   background: linear-gradient(90deg, rgba(203,195,227,1) 0%, rgba(244,244,252,1) 50%, rgba(203,195,227,1) 100%);
-} */
+} 
+
+body {
+  background-color: transparent;
+}

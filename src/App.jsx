@@ -8,7 +8,7 @@ export default function App() {
             <div className="border col-md-3 text-center">                                   {/* Will want to fix the spacing here eventually*/}
                 <h1>Hello! My name is Kaylee Eichorn</h1>
             </div>
-            <div className="border col-md-3 text-end">                           {/* And here too */}
+            <div className="border col-md-3 text-end">                                      {/* And here too */}
                 <p> Image here </p>
             </div>
         </div>
@@ -104,9 +104,9 @@ export default function App() {
     {/* Contact Section */}
       <div className="container border text-center mt-5">
         <h3> Contact </h3>
-        <button>Resume</button>
-        <button>Github</button>
-        <button>LinkedIn</button>
+        <a href="https://docs.google.com/document/d/1zDluULlcMdWv3Z8oIeb1qhblGCDVGuVqkeEU8Wq5jcM/edit?usp=sharing">Resume</a>
+        <a href="https://github.com/eichornk">Github</a>
+        <a href="https://www.linkedin.com/in/kaylee-eichorn">LinkedIn</a>
         <button>Other</button>
       </div>
     </>

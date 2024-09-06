@@ -2,14 +2,24 @@ import './App.css'
 import styled from '@emotion/styled'
 import majorExp from './assets/explorationProject.png'
 import greekDB from './assets/greekDatabase.png'
+
 const Button = styled.button`
   background-color: white;
+  margin: 10px;
   &:hover {
         background-color: green;
     }
 `
 
-
+const ProjButton = styled.button`
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  &:hover {
+        background-color: green;
+        transform: scale(1.05);
+    }
+`
 
 export default function App() {
   return (
@@ -53,6 +63,7 @@ export default function App() {
                   interests and career goals. We created a website that allowed students to explore the different majors offered by the College of Engineering, 
                   learn about the different career paths available to them, and find resources to help them succeed in their chosen major.
                 </p>
+                <a href="https://github.com/eichornk/coe_exploration" target="_blank" rel="noopener noreferrer" ClassName="text-decoration-none"> <ProjButton> COE Major Exploration GitHub </ProjButton> </a> 
               </div>
             </div>
           </div>
@@ -72,6 +83,7 @@ export default function App() {
                   Greek Life Office at Oregon State University to help them keep track of the different Greek Organizations on campus, the members of each organization, and philanthropy
                   events that each organization is hosting. We wanted to create this database to make it easier to access all this information in one place.
                 </p>
+                <a href="https://github.com/eichornk/CS340-project" target="_blank" rel="noopener noreferrer" ClassName="text-decoration-none"> <ProjButton> Go Greek Database Github </ProjButton> </a> 
               </div>
             </div>
           </div>
@@ -122,9 +134,9 @@ export default function App() {
     {/* Contact Section */}
       <div className="container border text-center mt-5">
         <h3> Contact </h3>
-        <Button><a href="https://docs.google.com/document/d/1zDluULlcMdWv3Z8oIeb1qhblGCDVGuVqkeEU8Wq5jcM/edit?usp=sharing" ClassName="text-decoration-none">Resume</a></Button>
-        <Button><a href="https://github.com/eichornk" ClassName="text-decoration-none">Github</a></Button>
-        <Button><a href="https://www.linkedin.com/in/kaylee-eichorn" ClassName="text-decoration-none">LinkedIn</a></Button>
+        <a href="https://docs.google.com/document/d/1zDluULlcMdWv3Z8oIeb1qhblGCDVGuVqkeEU8Wq5jcM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" ClassName="text-decoration-none"><Button>Resume</Button></a>
+        <a href="https://github.com/eichornk" target="_blank" rel="noopener noreferrer" ClassName="text-decoration-none"><Button>Github</Button></a>
+        <a href="https://www.linkedin.com/in/kaylee-eichorn" target="_blank" rel="noopener noreferrer" ClassName="text-decoration-none"><Button>LinkedIn</Button></a>
         <Button>Other</Button>
       </div>
     </>
